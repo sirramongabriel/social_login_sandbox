@@ -5,6 +5,7 @@ gem 'pg'
 gem 'jquery-rails'
 gem 'devise'
 gem 'omniauth-facebook'
+gem 'omniauth-twitter'
 gem 'figaro'
 
 group :assets do
