@@ -8,8 +8,8 @@
   <li>
     <%= link_to('Signup', new_user_registration_path) %> |
     <%= link_to('Login', new_user_session_path)  %>  |
-    <%= link_to('Sign in with Facebook', "/auth/facebook") %> 
-    <%#= old path was: user_omniauth_authorize_path(:facebook) %>
+    <%= link_to('Sign in with Facebook', user_omniauth_authorize_path(:facebook)) %> 
+    <%#= DOES NOT WORK => "/auth/facebook"   DOES WORK => old path was: user_omniauth_authorize_path(:facebook) %>
   </li>
 <% end %>
 </div>
