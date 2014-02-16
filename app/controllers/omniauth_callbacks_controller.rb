@@ -5,7 +5,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
       sign_in_and_redirect user, success: 'Signed in!'
     else
       session["devise.user_attributes"] = user.attributes
-      redirect_to new_user_registration_path
+      redirect_to root_path # new_user_registration_path
     end
   end
 
